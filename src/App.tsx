@@ -16,7 +16,7 @@ function App() {
           <Route path="/addLoader">
             <AddLoader />
           </Route>
-          <Route path="/login">
+          <Route path="/">
             <Login />
           </Route>
 
