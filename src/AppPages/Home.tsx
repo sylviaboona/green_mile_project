@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar'
 
 const Home = () => {
     return (
-        <div>
+        <div className="login-left-panel">
             <NavBar />
             <div className="login-left-panel">
                 <p className="tagline-loginpage">Your number one delivery partner</p>
