@@ -2,9 +2,10 @@ import React from 'react';
 import SideBar from '../components/SideBar'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-const AddLoader = () => {
+
+const AddSupplier = () => {
     return (
-        <div className="page-container">
+<div className="page-container">
             <NavBar />
             <SideBar />
             <div className="page-right-panel">
@@ -21,7 +22,7 @@ const AddLoader = () => {
                     <br />
                     <input type="text" name="cpassword" placeholder="Confirm Password" className="form-control form-signup" />
                     <br />
-                    <input type="submit" value="Register Loader" className="btn form-signup" />
+                    <input type="submit" value="Register Supplier" className="btn form-signup" />
                 </form>
             </div>
             <Footer />
@@ -29,4 +30,4 @@ const AddLoader = () => {
     )
 }
 
-export default AddLoader
+export default AddSupplier

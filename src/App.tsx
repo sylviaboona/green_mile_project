@@ -3,7 +3,14 @@ import React from 'react';
 import './assets/css/App.css';
 import Login from './AppPages/Login';
 import AddLoader from './AppPages/AddLoader'
-import Home from './AppPages/Home'
+import Home from './AppPages/Home';
+import ViewLoaders from './AppPages/ViewLoaders';
+import ViewSuppliers from './AppPages/ViewSuppliers'
+import AdminDash from './AppPages/AdminDash';
+import ViewReceipients from './AppPages/ViewReceipients'
+import  Settings  from './AppPages/Settings';
+import ViewInvoices from './AppPages/ViewInvoices';
+import AddSupplier from './AppPages/AddSupplier'
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,8 +21,29 @@ function App() {
     <Router >
       <div>
         <Switch>
+        <Route path="/adminDash">
+            <AdminDash />
+          </Route>
+        <Route path="/viewSuppliers">
+            <ViewSuppliers />
+          </Route>
+        <Route path="/viewLoaders">
+            <ViewLoaders />
+          </Route>
+          <Route path="/viewReceipients">
+            <ViewReceipients />
+          </Route>
+          <Route path="/viewInvoices">
+            <ViewInvoices/>
+          </Route>
+          <Route path="/settings">
+            <Settings/>
+          </Route>
           <Route path="/addLoader">
             <AddLoader />
+          </Route>
+          <Route path="/addSupplier">
+            <AddSupplier />
           </Route>
           <Route path="/login">
             <Login />

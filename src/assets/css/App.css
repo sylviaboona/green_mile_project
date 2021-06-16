@@ -18,6 +18,15 @@
   width: 240px;
 }
 
+.signup-btn{
+  background-color: rgb(7, 126, 126);
+  color: beige;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 470px;
+  
+}
+
 .login-left-panel{
   background-color: rgb(7, 126, 126);
   border-radius: 5px;
@@ -74,6 +83,7 @@
   margin-left: 300px;
   margin-right: 350px;
    text-align: right;
+   padding: 20px;
 }
 
 .navbar-link{
@@ -88,7 +98,7 @@
   background-color: rgb(7, 126, 126);
   border-radius: 5px;
   width: 300px;
-  height: 650px;
+  height: 600px;
 }
 
 .footer-container{
@@ -103,19 +113,34 @@
   text-align: center;
 }
 
-.add-loader-form{
-  width: 600px;
-  height: 650px;
+.page-right-panel{
+  width: 610px;
+  height: 600px;
   background-color: rgb(245, 241, 241);
   border-radius: 5px;
-  margin-left: 300px;
-  margin-top: -650px;
+  margin-left: 305px;
+  margin-top: -600px;
 }
 
 .page-container{
   margin-left: 300px;
 }
+.add-loader-form{
+  width: 600px;
+  border-radius: 5px;
+  padding-top: 100px;
+  margin-left: 20px;
+}
 
 .sidebar-link{
-  padding: 10px;
+  /* padding: 50px; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: beige;
+  margin-left: 50px;
+}
+
+.form-signup{
+  width: 500px;
+
 }
