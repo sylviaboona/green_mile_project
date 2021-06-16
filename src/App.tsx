@@ -3,6 +3,7 @@ import React from 'react';
 import './assets/css/App.css';
 import Login from './AppPages/Login';
 import AddLoader from './AppPages/AddLoader'
+import Home from './AppPages/Home'
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
 
         </Switch>
