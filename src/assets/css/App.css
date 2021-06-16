@@ -1,0 +1,83 @@
+.form-control{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(202, 199, 199);
+  border: 0px solid;
+  margin: 8px;
+  width: 220px;
+}
+
+.btn{
+  background-color: rgb(7, 126, 126);
+  padding: 10px;
+  border-radius: 5px;
+  color: beige;
+  font-weight: 10;
+  margin-left: 10px;
+  margin-top: 8px;
+  width: 240px;
+}
+
+.login-left-panel{
+  background-color: rgb(7, 126, 126);
+  border-radius: 5px;
+  width: 600px;
+  height: 650px;
+  margin-left: 300px;
+}
+
+.login-right-panel{
+  width: 300px;
+  height: 650px;
+  background-color: rgb(245, 241, 241);
+  border-radius: 5px;
+  margin-left:  905px;
+  margin-top: -650px;
+}
+
+.login-form{
+  padding-left: 20px;
+}
+
+.login-page-container{
+  margin-left: 30px;
+}
+
+.logo-login{
+  margin-left: 30px;
+  padding-top: 100px;
+}
+
+.forgot-password{
+  color: rgb(7, 126, 126);
+  text-align: center;
+  font-weight: bold;
+}
+
+.tagline-loginpage{
+  color: beige;
+  font-style: italic;
+  text-align: center;
+  padding-top: 500px;
+  font-size: 20px;
+}
+
+.login-left-panel-img{
+  width: 200px;
+  /* padding-top: -400px; */
+  margin-left: 150px;
+  margin-top: -600px;
+}
+
+.navbar{
+  background-color: beige;
+  margin-left: 300px;
+  margin-right: 350px;
+  padding: 10px;
+}
+
+.navbar-link{
+  color: teal;
+  padding-right: 100px;
+  text-align: right;
+}
