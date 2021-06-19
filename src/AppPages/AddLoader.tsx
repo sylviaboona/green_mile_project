@@ -1,11 +1,10 @@
 import React from 'react';
 import SideBar from '../components/SideBar'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+
 const AddLoader = () => {
     return (
         <div className="page-container">
-            <NavBar />
+
             <SideBar />
             <div className="page-right-panel">
                 <form className="add-loader-form">
@@ -24,7 +23,7 @@ const AddLoader = () => {
                     <input type="submit" value="Register Loader" className="btn form-signup" />
                 </form>
             </div>
-            <Footer />
+
         </div>
     )
 }

@@ -1,13 +1,12 @@
 import React from 'react'
 import gmlogo from '../assets/img/logo_transparent.png';
 import doorDelivery from '../assets/img/doordelivery.jpg'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+
 
 const LoginForm = () => {
     return (   
         <div className="login-page-container">
-            <NavBar/>
+            
             <div className="login-left-panel">
                 <p className="tagline-loginpage">Your number one delivery partner</p>
                 <img src={doorDelivery} alt="Door Delivery img" className="login-left-panel-img"/>
@@ -23,7 +22,7 @@ const LoginForm = () => {
                     <p className="forgot-password"><i>Forgot Password?</i></p>
                 </form>
             </div>
-            <Footer />
+          
         </div>
     )
 }

@@ -10,7 +10,9 @@ import AdminDash from './AppPages/AdminDash';
 import ViewReceipients from './AppPages/ViewReceipients'
 import  Settings  from './AppPages/Settings';
 import ViewInvoices from './AppPages/ViewInvoices';
-import AddSupplier from './AppPages/AddSupplier'
+import AddSupplier from './AppPages/AddSupplier';
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,7 +22,9 @@ function App() {
   return (
     <Router >
       <div>
+      <NavBar/>
         <Switch>
+          
         <Route path="/adminDash">
             <AdminDash />
           </Route>
@@ -42,17 +46,21 @@ function App() {
           <Route path="/addLoader">
             <AddLoader />
           </Route>
+          <Route path="/" exact>
+            <Home />
+          </Route>
           <Route path="/addSupplier">
             <AddSupplier />
           </Route>
+     
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+         
+          
 
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
