@@ -32,15 +32,14 @@
   border-radius: 5px;
   width: 600px;
   height: 600px;
-  margin-left: 300px;
 }
 
 .login-right-panel{
-  width: 300px;
+  width: 330px;
   height: 600px;
   background-color: rgb(245, 241, 241);
   border-radius: 5px;
-  margin-left:  905px;
+  margin-left:  605px;
   margin-top: -600px;
 }
 
@@ -49,7 +48,7 @@
 }
 
 .login-page-container{
-  margin-left: 30px;
+  margin-left: 300px;
 }
 
 .logo-login{
@@ -75,7 +74,7 @@
   width: 200px;
   /* padding-top: -400px; */
   margin-left: 150px;
-  margin-top: -600px;
+  margin-top: -900px;
 }
 
 .navbar{
@@ -115,7 +114,7 @@
 }
 
 .page-right-panel{
-  width: 610px;
+  width: 630px;
   height: 600px;
   background-color: rgb(245, 241, 241);
   border-radius: 5px;
@@ -143,5 +142,14 @@
 
 .form-signup{
   width: 500px;
+}
 
+.table-header{
+  background-color: cadetblue;
+  border-color: red;
+}
+
+.table-field{
+  padding-left: 20px;
+  margin-right: 20px;
 }

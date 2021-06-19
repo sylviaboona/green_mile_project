@@ -18,6 +18,10 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import CreatePackage from './AppPages/CreatePackage';
+import ViewPackages from './AppPages/ViewPackages';
+import SupplierDash from './AppPages/SupplierDash';
+import ForgotPassword from './AppPages/ForgotPassword';
 function App() {
   return (
     <Router >
@@ -56,7 +60,18 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-         
+          <Route path="/forgotPassword">
+            <ForgotPassword />
+          </Route>
+          <Route path="/createPackage">
+            <CreatePackage />
+          </Route>
+          <Route path="/viewPackages">
+            <ViewPackages />
+          </Route>
+          <Route path="/supplierDash">
+            <SupplierDash />
+          </Route>
           
 
         </Switch>
