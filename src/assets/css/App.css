@@ -60,6 +60,7 @@
   color: rgb(7, 126, 126);
   text-align: center;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .tagline-loginpage{
@@ -79,18 +80,22 @@
 
 .navbar{
   /* background-color: rgb(167, 134, 134); */
-  margin-left: 300px;
+  margin-left: 605px;
   margin-right: 350px;
-   text-align: right;
+   text-align: left;
    padding: 20px;
 }
 
 .navbar-link{
   color: teal;
-  /* padding-right: 100px; */
-  padding-left: 100px;
+  /* padding-right: 50px; */
+  padding-left: 30px;
   padding-top: 5px;
   padding-right: 5px;
+  text-decoration: none;
+}
+.navbar-link:hover{
+  background-color: rgb(211, 205, 205);
 }
 
 .side-bar{
@@ -98,6 +103,10 @@
   border-radius: 5px;
   width: 300px;
   height: 600px;
+}
+.sidebar-link:hover{
+  background-color: rgb(231, 230, 230);
+  margin: 20px;
 }
 
 .footer-container{
@@ -138,18 +147,39 @@
   font-size: 15px;
   color: beige;
   margin-left: 50px;
+  text-decoration: none;
 }
 
 .form-signup{
   width: 500px;
 }
 
+table{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .table-header{
-  background-color: cadetblue;
-  border-color: red;
+  background-color: gray;
+  border-radius: 5px;
+  /* border-color:1px solid red; */
+  
 }
 
 .table-field{
-  padding-left: 20px;
+  /* padding-left: 20px; */
   margin-right: 20px;
+  margin-left: 20px;
+  /* padding-right: 40px;
+  padding-top: 10px; */
+  padding: 10px;
+}
+
+.table-data{
+  padding-left: 10px;
+  margin-right: 20px;
+  padding-top: 20px;
+  border-bottom:1px solid gray;
+  text-decoration: none;
+
+  /* background-color:blueviolet; */
 }

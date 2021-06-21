@@ -1,11 +1,11 @@
 import React from 'react'
 import SideBar from '../components/SideBar'
-import gmlogo from '../assets/img/twitter_header_photo_1.png'
+// import gmlogo from '../assets/img/twitter_header_photo_1.png'
 
 const ViewRecepients = () => {
     return (
         <div className="page-container">
-            <img src={gmlogo} width="200" alt="" />
+            {/* <img src={gmlogo} width="200" alt="" /> */}
             <SideBar />
             <div className="page-right-panel">
                 VIEW RECEIPIENTS
