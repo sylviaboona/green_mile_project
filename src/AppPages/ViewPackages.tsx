@@ -8,7 +8,8 @@ const ViewPackages = () => {
         {
             packageNo: '001',
             packagename: 'FlatScreen TV',
-            name: 'Rita',
+                        name: 'Rita',
+            address: 'Munyonyo',
             phone: '0789587888',
             time: '2:00pm',
             cost: 20000
@@ -17,6 +18,7 @@ const ViewPackages = () => {
             packageNo: '002',
             packagename: 'iPhone 12',
             name: 'Sylvia',
+            address: 'Kawempe',
             phone: '0789587800',
             time: '2:30pm',
             cost: 80000
@@ -25,6 +27,7 @@ const ViewPackages = () => {
             packageNo: '003',
             packagename: 'Car Seat',
             name: 'Helen',
+            address: 'Muyenga',
             phone: '0709587800',
             time: '1:30pm',
             cost: 100000
@@ -49,9 +52,10 @@ const ViewPackages = () => {
                 <table>
                     <thead className="table-header">
                         <tr>
-                            <th className="table-field"> Package No.</th>
+                            <th className="table-field">No.</th>
                             <th className="table-field">Package Name</th>
                             <th className="table-field"> Receipient</th>
+                            <th className="table-field"> Phone</th>
                             <th className="table-field"> Delivery Time</th>
                             <th className="table-field"> Delivery Cost</th>
                         </tr>
@@ -62,6 +66,7 @@ const ViewPackages = () => {
                                 <td className="table-data">{item.packageNo}</td>
                                 <td className="table-data">{item.packagename}</td>
                                 <td className="table-data">{item.name}</td>
+                                <td className="table-data">{item.phone}</td>
                                 <td className="table-data">{item.time}</td>
                                 <td className="table-data">{item.cost}</td>
                             </tr>

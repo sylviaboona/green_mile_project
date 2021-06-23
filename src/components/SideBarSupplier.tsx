@@ -9,8 +9,6 @@ const SideBarSupplier = () => {
             <br/>
             <br/>
             <br/>
-            <br/>
-            <br/>
             <Link to="/supplierDash" className="sidebar-link">Supplier Dashboard</Link>
             <br/>
             <br/>

@@ -10,8 +10,6 @@ const SideBar = () => {
             <br/>
             <br/>
             <br/>
-            <br/>
-            <br/>
             <Link to="/adminDash" className="sidebar-link">Admin Dashboard</Link>
             <br/>
             <br/>

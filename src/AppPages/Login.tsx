@@ -1,5 +1,5 @@
 import React from 'react'
-import gmlogo from '../assets/img/logo_transparent.png';
+import gmlogo from '../assets/img/mgc_logo.png';
 import doorDelivery from '../assets/img/doordelivery.jpg'
 import { Link } from 'react-router-dom';
 

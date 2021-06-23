@@ -8,7 +8,7 @@ import ViewLoaders from './AppPages/ViewLoaders';
 import ViewSuppliers from './AppPages/ViewSuppliers'
 import AdminDash from './AppPages/AdminDash';
 import ViewReceipients from './AppPages/ViewReceipients'
-import  Settings  from './AppPages/Settings';
+import Settings from './AppPages/Settings';
 import ViewInvoices from './AppPages/ViewInvoices';
 import AddSupplier from './AppPages/AddSupplier';
 import NavBar from './components/NavBar'
@@ -26,38 +26,23 @@ function App() {
   return (
     <Router >
       <div>
-      <NavBar/>
+        <NavBar />
         <Switch>
-          
-        <Route path="/adminDash">
+
+          <Route path="/adminDash">
             <AdminDash />
           </Route>
-        <Route path="/viewSuppliers">
-            <ViewSuppliers />
-          </Route>
-        <Route path="/viewLoaders">
-            <ViewLoaders />
-          </Route>
-          <Route path="/viewReceipients">
-            <ViewReceipients />
-          </Route>
-          <Route path="/viewInvoices">
-            <ViewInvoices/>
-          </Route>
+
           <Route path="/settings">
-            <Settings/>
+            <Settings />
           </Route>
-          <Route path="/addLoader">
-            <AddLoader />
-          </Route>
-          <Route path="/" exact>
+
+          {/* <Route path="/" exact>
             <Home />
-          </Route>
-          <Route path="/addSupplier">
-            <AddSupplier />
-          </Route>
-     
-          <Route path="/login">
+          </Route> */}
+
+
+          <Route path="/" exact>
             <Login />
           </Route>
           <Route path="/forgotPassword">
@@ -72,7 +57,7 @@ function App() {
           <Route path="/supplierDash">
             <SupplierDash />
           </Route>
-          
+
 
         </Switch>
         <Footer />
