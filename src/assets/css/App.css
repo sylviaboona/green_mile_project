@@ -1,12 +1,81 @@
+.navbar{
+  /* background-color: rgb(167, 134, 134); */
+  margin-left: 605px;
+  margin-right: 215px;
+   text-align: left;
+   padding: 20px;
+}
+
+.navbar-link{
+  color: teal;
+  /* padding-right: 50px; */
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+}
+.navbar-link:hover{
+  background-color: rgb(211, 205, 205);
+  padding: 5px;
+}
+
 .form-control{
   padding: 10px;
   border-radius: 5px;
   background-color: rgb(202, 199, 199);
   border: 0px solid;
   /* margin: 8px; */
-  width: 220px;
+  /* width: 220px; */
+}
+.signup-form{
+  width: 600px;
+  border-radius: 5px;
+  padding-top: 100px;
+  margin-left: 40px;
+}
+.signup-form-input{
+  width: 580px;
 }
 
+.signup-btn{
+  background-color: rgb(7, 126, 126);
+  color: beige;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 695px;
+  
+}
+
+.login-left-panel{
+  background-color: rgb(7, 126, 126);
+  border-radius: 5px;
+  width: 750px;
+  height: 600px;
+}
+
+.login-right-panel{
+  width: 430px;
+  height: 600px;
+  background-color: rgb(245, 241, 241);
+  border-radius: 5px;
+  margin-left:  755px;
+  margin-top: -600px;
+}
+
+.login-form{
+  padding-left: 20px;
+  width: 360px;
+  margin-left: 20px;
+}
+
+.login-page-container{
+  margin-left: 200px;
+}
+
+.logo-login{
+  margin-left: 80px;
+  padding-top: 50px;
+}
 .btn{
   background-color: rgb(7, 126, 126);
   padding: 10px;
@@ -15,45 +84,9 @@
   font-weight: 10;
   /* margin-left: 10px; */
   margin-top: 8px;
-  width: 240px;
 }
-
-.signup-btn{
-  background-color: rgb(7, 126, 126);
-  color: beige;
-  padding: 10px;
-  border-radius: 5px;
-  margin-left: 470px;
-  
-}
-
-.login-left-panel{
-  background-color: rgb(7, 126, 126);
-  border-radius: 5px;
-  width: 600px;
-  height: 600px;
-}
-
-.login-right-panel{
-  width: 330px;
-  height: 600px;
-  background-color: rgb(245, 241, 241);
-  border-radius: 5px;
-  margin-left:  605px;
-  margin-top: -600px;
-}
-
-.login-form{
-  padding-left: 20px;
-}
-
-.login-page-container{
-  margin-left: 300px;
-}
-
-.logo-login{
-  margin-left: 30px;
-  padding-top: 100px;
+.login-btn{
+  width: 340px;
 }
 
 .forgot-password{
@@ -61,6 +94,7 @@
   text-align: center;
   font-weight: bold;
   text-decoration: none;
+  padding-top: 15px;
 }
 
 .tagline-loginpage{
@@ -73,51 +107,18 @@
 
 .login-left-panel-img{
   width: 200px;
-  margin-left: 200px;
+  margin-left: 280px;
   margin-top: -600px;
   border-radius: 5px;
   opacity: 60%;
 }
 
-.navbar{
-  /* background-color: rgb(167, 134, 134); */
-  margin-left: 605px;
-  margin-right: 350px;
-   text-align: left;
-   padding: 20px;
-}
-
-.navbar-link{
-  color: teal;
-  /* padding-right: 50px; */
-  padding-left: 30px;
-  padding-top: 5px;
-  padding-right: 5px;
-  text-decoration: none;
-}
-.navbar-link:hover{
-  background-color: rgb(211, 205, 205);
-}
-
-.side-bar{
-  background-color: rgb(7, 126, 126);
-  border-radius: 5px;
-  width: 300px;
-  height: 600px;
-}
-.sidebar-link:hover{
-  background-color: rgb(104, 102, 102);
-  padding: 20px ;
-  border-radius: 5px;
-  /* width: 200px; */
-  /* padding-right: 100px; */
-}
 
 .footer-container{
   background-color: rgb(245, 241, 241);
-  padding: 5px;
-  margin-left: 300px;
-  margin-right: 365px;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 215px;
   margin-top: 5px;
   border-radius: 5px;
 }
@@ -126,23 +127,14 @@
   text-align: center;
 }
 
-.page-right-panel{
-  width: 630px;
+.side-bar{
+  background-color: rgb(7, 126, 126);
+  border-radius: 5px;
+  width: 300px;
   height: 600px;
-  background-color: rgb(245, 241, 241);
-  border-radius: 5px;
-  margin-left: 305px;
-  margin-top: -600px;
 }
-
-.page-container{
-  margin-left: 300px;
-}
-.add-loader-form{
-  width: 600px;
-  border-radius: 5px;
-  padding-top: 100px;
-  margin-left: 20px;
+.side-bar-signup{
+  width: 500px;
 }
 
 .sidebar-link{
@@ -153,10 +145,31 @@
   margin-left: 50px;
   text-decoration: none;
 }
-
-.form-signup{
-  width: 580px;
+.sidebar-link:hover{
+  background-color: rgb(104, 102, 102);
+  padding: 20px ;
+  border-radius: 5px;
+  /* width: 200px; */
+  /* padding-right: 100px; */
 }
+
+.page-right-panel{
+  width: 880px;
+  height: 600px;
+  background-color: rgb(245, 241, 241);
+  border-radius: 5px;
+  margin-left: 305px;
+  margin-top: -600px;
+}
+.page-right-panel-signup{
+  width: 680px;
+  margin-left: 505px;
+}
+
+.page-container{
+  margin-left: 200px;
+}
+
 
 table{
   margin-left: 20px;
@@ -181,4 +194,22 @@ table{
   text-decoration: none;
 
   /* background-color:blueviolet; */
+}
+
+.table-supplier{
+ padding-right: 30px;
+}
+
+.table-packages{
+  padding-right: 45px;
+ }
+
+.invoice-card{
+  /* width: 250px; */
+  margin-left: 10px;
+}
+
+.total-order-cost{
+  font-size: 20px;
+  color: rgb(175, 13, 13);
 }

@@ -1,23 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const SideBarSupplier = () => {
+const SideBarSignup = () => {
     return (
-<div className="side-bar">
+        <div className="side-bar side-bar-signup">
             <br/>
             <br/>
             <br/>
             <br/>
             <br/>
-            <Link to="/supplierDash" className="sidebar-link">My Account</Link>
+            <Link to="/adminDash" className="sidebar-link">Admin Dashboard</Link>
             <br/>
             <br/>
             <br/>
-            <Link to="/viewPackages" className="sidebar-link">View Packages</Link>
+            <Link to="/viewLoaders" className="sidebar-link">View Loaders</Link>
             <br/>
             <br/>
             <br/>
-            <Link to="/viewOrders" className="sidebar-link">View Orders</Link>
+            <Link to="/viewSuppliers" className="sidebar-link">View Suppliers</Link>
             <br/>
             <br/>
             <br/>
@@ -30,8 +30,9 @@ const SideBarSupplier = () => {
             <br/>
             <br/>
             <Link to="/settings" className="sidebar-link">Settings</Link>
+            {/* <Footer/> */}
         </div>
     )
 }
 
-export default SideBarSupplier
+export default SideBarSignup

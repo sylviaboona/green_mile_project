@@ -1,7 +1,7 @@
 import React from 'react'
-import gmlogo from '../assets/img/logo_transparent.png';
+import gmlogo from '../assets/img/mgc_logo.png';
 import doorDelivery from '../assets/img/doordelivery.jpg'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const ForgotPassword = () => {
     return (
@@ -20,7 +20,7 @@ const ForgotPassword = () => {
                     <br />
                     <input type="text" name="cpassword" placeholder="Confirm Password" className="form-control" />
                     <br />
-                    <input type="submit" value="Change Password" className="btn" />
+                    <input type="submit" value="Change Password" className="btn login-btn" />
 
 
                 </form>

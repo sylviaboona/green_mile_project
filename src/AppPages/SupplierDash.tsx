@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import SideBarSupplier from '../components/SideBarSupplier'
 
 const SupplierDash = () => {
@@ -6,7 +7,8 @@ const SupplierDash = () => {
         <div className="page-container">
             <SideBarSupplier />
             <div className="page-right-panel">
-                {/* <Link to="/addLoader" className="signup-btn">ADD SUPPLIER</Link> */}
+                <br />
+            <Link to="/viewInvoices" className="signup-btn">INVOICES</Link>
             </div>
         </div>
     )

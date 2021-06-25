@@ -8,7 +8,7 @@ const ViewPackages = () => {
         {
             packageNo: '001',
             packagename: 'FlatScreen TV',
-                        name: 'Rita',
+            name: 'Rita Mugume',
             address: 'Munyonyo',
             phone: '0789587888',
             time: '2:00pm',
@@ -17,7 +17,7 @@ const ViewPackages = () => {
         {
             packageNo: '002',
             packagename: 'iPhone 12',
-            name: 'Sylvia',
+            name: 'Sylvia Boona',
             address: 'Kawempe',
             phone: '0789587800',
             time: '2:30pm',
@@ -52,9 +52,10 @@ const ViewPackages = () => {
                 <table>
                     <thead className="table-header">
                         <tr>
-                            <th className="table-field">No.</th>
+                            <th className="table-field ">Package No.</th>
                             <th className="table-field">Package Name</th>
-                            <th className="table-field"> Receipient</th>
+                            <th className="table-field table-packages"> Receipient</th>
+                            <th className="table-field"> Address</th>
                             <th className="table-field"> Phone</th>
                             <th className="table-field"> Delivery Time</th>
                             <th className="table-field"> Delivery Cost</th>
@@ -66,6 +67,7 @@ const ViewPackages = () => {
                                 <td className="table-data">{item.packageNo}</td>
                                 <td className="table-data">{item.packagename}</td>
                                 <td className="table-data">{item.name}</td>
+                                <td className="table-data">{item.address}</td>
                                 <td className="table-data">{item.phone}</td>
                                 <td className="table-data">{item.time}</td>
                                 <td className="table-data">{item.cost}</td>
