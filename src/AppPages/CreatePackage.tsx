@@ -15,6 +15,15 @@ const CreatePackage = () => {
     const [cost, setCost] = useState('')
 
 
+    const handleSubmit = () => {
+        localStorage.setItem('packagename', packagename);
+        localStorage.setItem('name', name);
+        localStorage.setItem('address', address);
+        localStorage.setItem('phone', phone);
+        localStorage.setItem('time', time);
+        localStorage.setItem('cost', cost);
+    };
+
     const onSubmit = (e: any) => {
         e.preventDefault()
 
@@ -58,7 +67,7 @@ const CreatePackage = () => {
                     <br />
                     <input type="text" name="delivery cost" placeholder="Delivery Cost" className="form-control signup-form-input" value={cost} onChange={(e) => setCost(e.target.value)} />
                     <br />
-                    <input type="submit" value="Create Package" className="btn signup-form-input"/>
+                    <input type="submit" value="Create Package" className="btn signup-form-input" onClick={handleSubmit}/>
                 </form>
             </div>
 

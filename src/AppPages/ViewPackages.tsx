@@ -4,36 +4,36 @@ import { Link } from 'react-router-dom'
 import SideBarSupplier from '../components/SideBarSupplier'
 
 const ViewPackages = () => {
-    const packageItems = [
-        {
-            packageNo: '001',
-            packagename: 'FlatScreen TV',
-            name: 'Rita Mugume',
-            address: 'Munyonyo',
-            phone: '0789587888',
-            time: '2:00pm',
-            cost: 20000
-        },
-        {
-            packageNo: '002',
-            packagename: 'iPhone 12',
-            name: 'Sylvia Boona',
-            address: 'Kawempe',
-            phone: '0789587800',
-            time: '2:30pm',
-            cost: 80000
-        },
-        {
-            packageNo: '003',
-            packagename: 'Car Seat',
-            name: 'Helen',
-            address: 'Muyenga',
-            phone: '0709587800',
-            time: '1:30pm',
-            cost: 100000
-        },
+    // const packageItems = [
+    //     {
+    //         packageNo: '001',
+    //         packagename: 'FlatScreen TV',
+    //         name: 'Rita Mugume',
+    //         address: 'Munyonyo',
+    //         phone: '0789587888',
+    //         time: '2:00pm',
+    //         cost: 20000
+    //     },
+    //     {
+    //         packageNo: '002',
+    //         packagename: 'iPhone 12',
+    //         name: 'Sylvia Boona',
+    //         address: 'Kawempe',
+    //         phone: '0789587800',
+    //         time: '2:30pm',
+    //         cost: 80000
+    //     },
+    //     {
+    //         packageNo: '003',
+    //         packagename: 'Car Seat',
+    //         name: 'Helen',
+    //         address: 'Muyenga',
+    //         phone: '0709587800',
+    //         time: '1:30pm',
+    //         cost: 100000
+    //     },
 
-    ]
+    // ]
     // const[packageItems,  setPackages] = useState([])
     // useEffect(()=>{
     //     setPackages(packageItems)
@@ -62,7 +62,19 @@ const ViewPackages = () => {
                         </tr>
                     </thead>
                     <tbody >
-                        {packageItems.map(item => (
+
+                    {localStorage.getItem('Password') && (
+                        <tr>
+                                <td className="table-data">001</td>
+                                <td className="table-data">{localStorage.getItem('packagename')}</td>
+                                <td className="table-data">{localStorage.getItem('name')}</td>
+                                <td className="table-data">{localStorage.getItem('address')}</td>
+                                <td className="table-data">{localStorage.getItem('phone')}</td>
+                                <td className="table-data">{localStorage.getItem('time')}</td>
+                                <td className="table-data">{localStorage.getItem('cost')}</td>
+                        </tr>
+                    )}
+                        {/* {packageItems.map(item => (
                             <tr>
                                 <td className="table-data">{item.packageNo}</td>
                                 <td className="table-data">{item.packagename}</td>
@@ -72,7 +84,7 @@ const ViewPackages = () => {
                                 <td className="table-data">{item.time}</td>
                                 <td className="table-data">{item.cost}</td>
                             </tr>
-                        ))}
+                        ))} */}
                     </tbody>
                 </table>
             </div>
