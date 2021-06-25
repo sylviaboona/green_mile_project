@@ -14,13 +14,6 @@ const ViewSuppliers = () => {
         },
         {
             id: '02',
-            name: 'Sylvia Boona',
-            phone: '0789587800',
-            email: 'syl@gmail.com',
-            dob: '22/10/1990'
-        },
-        {
-            id: '03',
             name: 'Helen Mazima',
             phone: '0709587800',
             email: 'helen@gmail.com',

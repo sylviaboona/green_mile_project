@@ -22,6 +22,7 @@ import CreatePackage from './AppPages/CreatePackage';
 import ViewPackages from './AppPages/ViewPackages';
 import SupplierDash from './AppPages/SupplierDash';
 import ForgotPassword from './AppPages/ForgotPassword';
+import ViewOrders from './AppPages/ViewOrders';
 function App() {
   return (
     <Router >
@@ -66,6 +67,9 @@ function App() {
           </Route>
           <Route path="/viewPackages">
             <ViewPackages />
+          </Route>
+          <Route path="/viewOrders">
+            <ViewOrders />
           </Route>
           <Route path="/supplierDash">
             <SupplierDash />

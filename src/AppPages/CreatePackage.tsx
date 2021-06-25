@@ -1,10 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import SideBarSupplier from '../components/SideBarSupplier'
+import SideBarCreatePackage from '../components/SideBarCreatePackage'
 
-// const handleSubmit = ()=>{
-
-// }
 
 const CreatePackage = () => {
     const [packagename, setPackageName] = useState('')
@@ -52,7 +49,7 @@ const CreatePackage = () => {
     return (
         <div className="page-container">
 
-            <SideBarSupplier/>
+            <SideBarCreatePackage/>
             <div className="page-right-panel page-right-panel-signup">
                 <form className="signup-form" onSubmit={onSubmit}>
                     <input type="text" name="packagename" placeholder="Package Name" className="form-control signup-form-input" value={packagename} onChange={(e) => setPackageName(e.target.value)} />

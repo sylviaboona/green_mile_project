@@ -1,9 +1,10 @@
 .navbar{
   /* background-color: rgb(167, 134, 134); */
-  margin-left: 605px;
-  margin-right: 215px;
+  margin-left: 505px;
+  margin-right: 315px;
    text-align: left;
    padding: 20px;
+   width: 880px;
 }
 
 .navbar-link{
@@ -58,7 +59,7 @@
   height: 600px;
   background-color: rgb(245, 241, 241);
   border-radius: 5px;
-  margin-left:  755px;
+  margin-left:  753px;
   margin-top: -600px;
 }
 
@@ -119,8 +120,9 @@
   padding: 10px;
   margin-left: 200px;
   margin-right: 215px;
-  margin-top: 5px;
+  margin-top: 3px;
   border-radius: 5px;
+  width: 1185px;
 }
 
 .footer-text{
@@ -146,7 +148,7 @@
   text-decoration: none;
 }
 .sidebar-link:hover{
-  background-color: rgb(104, 102, 102);
+  background-color: rgb(112, 209, 194);
   padding: 20px ;
   border-radius: 5px;
   /* width: 200px; */
@@ -158,12 +160,12 @@
   height: 600px;
   background-color: rgb(245, 241, 241);
   border-radius: 5px;
-  margin-left: 305px;
+  margin-left: 303px;
   margin-top: -600px;
 }
 .page-right-panel-signup{
   width: 680px;
-  margin-left: 505px;
+  margin-left: 503px;
 }
 
 .page-container{
@@ -212,4 +214,13 @@ table{
 .total-order-cost{
   font-size: 20px;
   color: rgb(175, 13, 13);
+}
+
+.admin-dash-card{
+  width: 350px;
+  margin-left: 10px;
+}
+
+body{
+  background-color: rgb(26, 25, 25);
 }

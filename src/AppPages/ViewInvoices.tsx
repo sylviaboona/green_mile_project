@@ -73,8 +73,9 @@ const ViewInvoices = () => {
                                 <hr />
                                 {clientOrder[0].map(item => (
                                     <>
-                                        <p className="card-text">Item:{item.item} Cost: {item.cost}</p>
+                                        <p className="card-text">{item.item}: {item.cost}</p>
                                     </>
+                                    
                                 )
                                 )
                                 }

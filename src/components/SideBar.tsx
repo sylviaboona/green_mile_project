@@ -1,5 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+
+// import Icon from '@material-ui/core/Icon'
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import ViewListIcon from '@material-ui/icons/ViewList';
+import SettingsIcon from '@material-ui/icons/Settings';
+import ReceiptIcon from '@material-ui/icons/Receipt';
 // import Footer from './Footer'
 
 const SideBar = () => {
@@ -10,27 +16,27 @@ const SideBar = () => {
             <br/>
             <br/>
             <br/>
-            <Link to="/adminDash" className="sidebar-link">Admin Dashboard</Link>
+            <Link to="/adminDash" className="sidebar-link"> <DashboardIcon/>   Admin Dashboard</Link>
             <br/>
             <br/>
             <br/>
-            <Link to="/viewLoaders" className="sidebar-link">View Loaders</Link>
+            <Link to="/viewLoaders" className="sidebar-link"> <ViewListIcon/>     View Loaders</Link>
             <br/>
             <br/>
             <br/>
-            <Link to="/viewSuppliers" className="sidebar-link">View Suppliers</Link>
+            <Link to="/viewSuppliers" className="sidebar-link"><ViewListIcon/>     View Suppliers</Link>
             <br/>
             <br/>
             <br/>
-            <Link to="/viewReceipients" className="sidebar-link">View Receipients</Link>
+            <Link to="/viewReceipients" className="sidebar-link"><ViewListIcon/>    View Receipients</Link>
             <br/>
             <br/>
             <br/>
-            <Link to="/viewInvoices" className="sidebar-link">View Invoices</Link>
+            <Link to="/viewInvoices" className="sidebar-link"><ReceiptIcon/>   View Invoices</Link>
             <br/>
             <br/>
             <br/>
-            <Link to="/settings" className="sidebar-link">Settings</Link>
+            <Link to="/settings" className="sidebar-link"><SettingsIcon/>    Settings</Link>
             {/* <Footer/> */}
         </div>
     )
