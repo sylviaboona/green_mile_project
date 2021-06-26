@@ -265,6 +265,13 @@ table{
   margin-left: 10px;
 }
 
+.profile-image-supplier{
+  margin-left: 100px;
+  margin-top: 20px;
+  border-radius: 200px;
+  width: 70px;
+}
+
 body{
   background-color: rgb(26, 25, 25);
 }
