@@ -47,7 +47,7 @@ const CreatePackage = () => {
         setCost('')
     }
     return (
-        <div className="page-container">
+        <div className="login-page-container">
 
             <SideBarCreatePackage/>
             <div className="page-right-panel page-right-panel-signup">

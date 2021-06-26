@@ -44,12 +44,12 @@ const ViewPackages = () => {
             <SideBarSupplier />
             <div className="page-right-panel">
                 <br />
-                <Link to="/createPackage" className="signup-btn">ADD PACKAGE</Link>
+                <Link to="/createPackage" ><button type="button" className="btn btn-sm signup-btn">ADD PACKAGE</button></Link>
                 <br />
                 <br />
                 <br />
                 <br />
-                <table>
+                <table className="table table-striped table-bordered">
                     <thead className="table-header">
                         <tr>
                             <th className="table-field ">Package No.</th>

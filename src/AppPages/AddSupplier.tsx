@@ -5,7 +5,7 @@ import SideBarSignup from '../components/SideBarSignup';
 
 const AddSupplier = () => {
     return (
-        <div className="page-container">
+        <div className="login-page-container">
 
             <SideBarSignup />
             <div className="page-right-panel page-right-panel-signup">

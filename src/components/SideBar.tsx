@@ -13,31 +13,30 @@ const SideBar = () => {
         <div className="side-bar">
             <br/>
             <br/>
+            <DashboardIcon className="sidebar-link sidebar-icon"/> 
+            <br />
+            <Link to="/adminDash" className="sidebar-link">Dashboard</Link>
+            <hr className="linebreak"/>
+            <ViewListIcon className="sidebar-link sidebar-icon"/>
             <br/>
+            <Link to="/viewLoaders" className="sidebar-link">Loaders</Link>
+            <hr className="linebreak"/>
+            <ViewListIcon className="sidebar-link sidebar-icon"/>
             <br/>
+            <Link to="/viewSuppliers" className="sidebar-link">Suppliers</Link>
+            <hr className="linebreak"/>
+            <ViewListIcon className="sidebar-link sidebar-icon"/>
             <br/>
-            <Link to="/adminDash" className="sidebar-link"> <DashboardIcon/>   Admin Dashboard</Link>
+            <Link to="/viewReceipients" className="sidebar-link">Receipients</Link>
+            <hr className="linebreak"/>
+            <ReceiptIcon className="sidebar-link sidebar-icon"/>
             <br/>
+            <Link to="/viewInvoices" className="sidebar-link">Invoices</Link>
+            <hr className="linebreak"/>
+            <SettingsIcon className="sidebar-link sidebar-icon"/>
             <br/>
-            <br/>
-            <Link to="/viewLoaders" className="sidebar-link"> <ViewListIcon/>     View Loaders</Link>
-            <br/>
-            <br/>
-            <br/>
-            <Link to="/viewSuppliers" className="sidebar-link"><ViewListIcon/>     View Suppliers</Link>
-            <br/>
-            <br/>
-            <br/>
-            <Link to="/viewReceipients" className="sidebar-link"><ViewListIcon/>    View Receipients</Link>
-            <br/>
-            <br/>
-            <br/>
-            <Link to="/viewInvoices" className="sidebar-link"><ReceiptIcon/>   View Invoices</Link>
-            <br/>
-            <br/>
-            <br/>
-            <Link to="/settings" className="sidebar-link"><SettingsIcon/>    Settings</Link>
-            {/* <Footer/> */}
+            <Link to="/settings" className="sidebar-link">Settings</Link>
+            {/* <hr className="linebreak"/> */}
         </div>
     )
 }

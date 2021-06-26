@@ -14,8 +14,9 @@ const NavBar = () => {
     // } else{
     return (
         < div >
-            <img src={gmlogo} width="250" alt="GreenMileLogo" className="logo-nav" />
+            {/* <img src={gmlogo} width="250" alt="GreenMileLogo" className="logo-nav" /> */}
             <div className="navbar">
+            <img src={gmlogo} width="250" alt="GreenMileLogo" className="logo-nav"/>
                 <Link to="/adminDash" className="navbar-link">ADMIN DASHBOARD</Link>
                 <Link to="/supplierDash" className="navbar-link">SUPPLIER DASHBOARD</Link>
                 <Link to="/" className="navbar-link">LOGIN</Link>

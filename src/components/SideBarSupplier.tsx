@@ -12,29 +12,27 @@ const SideBarSupplier = () => {
         <div className="side-bar">
              <img src={gmlogo} width="250" alt="GreenMileLogo" className="profile-image-supplier" />
         <br />
+        <br />
         <div >
+        <DashboardIcon className="sidebar-link sidebar-icon"/> 
             <br />
-            <Link to="/supplierDash" className="sidebar-link"><DashboardIcon />  My Account</Link>
-            <br />
-            <br />
-            <br />
-            <Link to="/viewPackages" className="sidebar-link"> <CardGiftcardSharpIcon />   View Packages</Link>
-            <br />
-            <br />
-            <br />
-            <Link to="/viewOrders" className="sidebar-link"><ShoppingCartSharpIcon />   View Orders</Link>
-            <br />
-            <br />
-            <br />
-            <Link to="/viewReceipients" className="sidebar-link"><ViewListIcon />   View Receipients</Link>
-            {/* <br/>
+            <Link to="/supplierDash" className="sidebar-link">My Account</Link>
+            <hr className="linebreak"/>
+            <CardGiftcardSharpIcon className="sidebar-link sidebar-icon"/>
             <br/>
+            <Link to="/viewPackages" className="sidebar-link">Packages</Link>
+            <hr className="linebreak"/>
+            <ShoppingCartSharpIcon className="sidebar-link sidebar-icon"/>
             <br/>
-            <Link to="/viewInvoices" className="sidebar-link">View Invoices</Link> */}
-            <br />
-            <br />
-            <br />
-            <Link to="/settings" className="sidebar-link"> <SettingsIcon />    Settings</Link>
+            <Link to="/viewOrders" className="sidebar-link">Orders</Link>
+            <hr className="linebreak"/>
+            <ViewListIcon className="sidebar-link sidebar-icon"/>
+            <br/>
+            <Link to="/viewReceipients" className="sidebar-link">Receipients</Link>
+            <hr className="linebreak"/>
+            <SettingsIcon className="sidebar-link sidebar-icon"/>
+            <br/>
+            <Link to="/settings" className="sidebar-link">Settings</Link>
         </div>
         </div>
     )

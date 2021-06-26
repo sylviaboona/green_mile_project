@@ -1,6 +1,8 @@
 import React from 'react';
 import SideBar from '../components/SideBar'
 import { Link } from 'react-router-dom';
+// const dt = require('datatables.net')()
+// const dt = require('datatables.net-dt')
 
 const ViewLoaders = () => {
     const loaders = [
@@ -28,18 +30,24 @@ const ViewLoaders = () => {
 
     ]
 
+    // $(document).ready(()=>{
+    //     $('#example').DataTable();
+    // } );
+
+    // $(()=>{
+    //     $(('#example') as any).DataTable();
+    // } );
+
     return (
         <div className="page-container">
 
             <SideBar />
             <div className="page-right-panel">
                 <br />
-                <Link to="/addLoader" className="signup-btn">ADD LOADER</Link>
+                <Link to="/addLoader" className="btn btn-sm signup-btn">ADD LOADER</Link>
                 <br />
                 <br />
-                <br />
-                <br />
-                <table>
+                <table id="example" className="table table-striped table-bordered">
                     <thead className="table-header">
                         <tr>
                             <th className="table-field table-supplier"> No.</th>

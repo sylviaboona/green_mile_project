@@ -27,12 +27,12 @@ const ViewSuppliers = () => {
             <SideBar />
             <div className="page-right-panel">
                 <br />
-                <Link to="/addSupplier" className="signup-btn">ADD SUPPLIER</Link>
+                <Link to="/addSupplier" className="btn btn-sm signup-btn">ADD SUPPLIER</Link>
                 <br />
                 <br />
                 <br />
                 <br />
-                <table>
+                <table className="table table-striped table-bordered">
                     <thead className="table-header">
                         <tr>
                             <th className="table-field table-supplier"> No.</th>
