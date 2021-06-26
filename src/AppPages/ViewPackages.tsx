@@ -55,15 +55,15 @@ const ViewPackages = () => {
                             <th className="table-field ">Package No.</th>
                             <th className="table-field">Package Name</th>
                             <th className="table-field table-packages"> Receipient</th>
-                            <th className="table-field"> Address</th>
-                            <th className="table-field"> Phone</th>
-                            <th className="table-field"> Delivery Time</th>
+                            <th className="table-field table-packages"> Address</th>
+                            <th className="table-field table-packages"> Phone</th>
+                            <th className="table-field table-packages"> Delivery Time</th>
                             <th className="table-field"> Delivery Cost</th>
                         </tr>
                     </thead>
                     <tbody >
 
-                    {localStorage.getItem('Password') && (
+                    {localStorage.getItem('packagename') && (
                         <tr>
                                 <td className="table-data">001</td>
                                 <td className="table-data">{localStorage.getItem('packagename')}</td>

@@ -37,7 +37,7 @@ const LoginForm = () => {
         <div className="login-page-container">
 
             <div className="login-left-panel">
-                <p className="tagline-loginpage">Your number one delivery partner</p>
+                <p className="tagline-loginpage">Your number one package delivery partner</p>
                 <img src={doorDelivery} alt="Door Delivery img" className="login-left-panel-img" />
             </div>
             <div className="login-right-panel">

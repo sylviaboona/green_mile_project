@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Login from '../AppPages/Login'
-// import gmlogo from '../assets/img/twitter_header_photo_1.png'
+// import Login from '../AppPages/Login'
+import gmlogo from '../assets/img/mgc_logo2.png';
 
 const NavBar = () => {
     // if (<Login />){
@@ -12,16 +12,19 @@ const NavBar = () => {
     //         </div>
     //     )
     // } else{
-        return (
+    return (
+        < div >
+            <img src={gmlogo} width="250" alt="GreenMileLogo" className="logo-nav" />
             <div className="navbar">
                 <Link to="/adminDash" className="navbar-link">ADMIN DASHBOARD</Link>
                 <Link to="/supplierDash" className="navbar-link">SUPPLIER DASHBOARD</Link>
                 <Link to="/" className="navbar-link">LOGIN</Link>
             </div>
-        )
+        </div>
+    )
 
     // }
-        
+
 }
 
 export default NavBar
