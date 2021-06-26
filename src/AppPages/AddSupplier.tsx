@@ -22,7 +22,7 @@ const AddSupplier = () => {
                     <br />
                     <input type="text" name="cpassword" placeholder="Confirm Password" className="form-control signup-form-input" />
                     <br />
-                    <input type="submit" value="Register Supplier" className="btn signup-form-input" />
+                    <input type="submit" value="Register Supplier" className="btn signup-form-btn signup-form-input" />
                 </form>
             </div>
 

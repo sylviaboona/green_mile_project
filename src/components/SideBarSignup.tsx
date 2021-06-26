@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const SideBarSignup = () => {
     return (
         <div className="side-bar side-bar-signup">
-            <br/>
+            {/* <br/>
             <br/>
             <br/>
             <br/>
@@ -29,7 +29,7 @@ const SideBarSignup = () => {
             <br/>
             <br/>
             <br/>
-            <Link to="/settings" className="sidebar-link">Settings</Link>
+            <Link to="/settings" className="sidebar-link">Settings</Link> */}
             {/* <Footer/> */}
         </div>
     )

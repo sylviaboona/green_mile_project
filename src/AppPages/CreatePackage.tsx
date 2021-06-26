@@ -38,7 +38,7 @@ const CreatePackage = () => {
         }
 
         console.log(item);
-        
+
         setPackageName('')
         setName('')
         setAddress('')
@@ -49,7 +49,7 @@ const CreatePackage = () => {
     return (
         <div className="login-page-container">
 
-            <SideBarCreatePackage/>
+            <SideBarCreatePackage />
             <div className="page-right-panel page-right-panel-signup">
                 <form className="signup-form" onSubmit={onSubmit}>
                     <input type="text" name="packagename" placeholder="Package Name" className="form-control signup-form-input" value={packagename} onChange={(e) => setPackageName(e.target.value)} />
@@ -64,7 +64,7 @@ const CreatePackage = () => {
                     <br />
                     <input type="text" name="delivery cost" placeholder="Delivery Cost" className="form-control signup-form-input" value={cost} onChange={(e) => setCost(e.target.value)} />
                     <br />
-                    <input type="submit" value="Create Package" className="btn signup-form-input" onClick={handleSubmit}/>
+                    <input type="submit" value="Create Package" className="btn signup-form-btn signup-form-input" onClick={handleSubmit} />
                 </form>
             </div>
 

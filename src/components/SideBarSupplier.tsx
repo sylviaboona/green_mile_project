@@ -6,11 +6,10 @@ import SettingsIcon from '@material-ui/icons/Settings';
 // import ReceiptIcon from '@material-ui/icons/Receipt';
 import ShoppingCartSharpIcon from '@material-ui/icons/ShoppingCartSharp';
 import CardGiftcardSharpIcon from '@material-ui/icons/CardGiftcardSharp';
-import gmlogo from '../assets/img/profile3.jpg';
 const SideBarSupplier = () => {
     return (
         <div className="side-bar">
-             <img src={gmlogo} width="250" alt="GreenMileLogo" className="profile-image-supplier" />
+             
         <br />
         <br />
         <div >

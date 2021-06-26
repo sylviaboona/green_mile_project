@@ -1,39 +1,22 @@
 .navbar{
   background-color: white;
-  /* background-color: rgb(245, 241, 241); */
-  /* padding-left: 30px; */
-  /* margin-bottom: 10px; */
-   text-align: left;
-   /* padding: 20px; */
-   /* width: 880px; */
+   /* text-align: left; */
 }
 
 .logo-nav{
-  /* margin-left: 0px;
-  margin-bottom: -73px; */
-  /* width: 300px; */
   width: 200px;
   border-radius: 5px;
 }
 
 .navbar-link{
-  /* color: teal; */
-  /* color: beige; */
-  /* opacity: 80%; */
-  /* padding-right: 50px; */
 color: rgb(7, 126, 126);
-  padding-left: 20px;
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 20px;
   text-decoration: none;
   font-weight: bold;
 }
 .navbar-link:hover{
   text-decoration: none;
-  background-color: rgb(189, 186, 186);
-  border-radius: 15px;
   color: rgb(7, 126, 126);
+  font-weight: normal;
 }
 
 .form-control{
@@ -41,8 +24,6 @@ color: rgb(7, 126, 126);
   border-radius: 5px;
   background-color: rgb(202, 199, 199);
   border: 0px solid;
-  /* margin: 8px; */
-  /* width: 220px; */
 }
 .signup-form{
   width: 600px;
@@ -50,23 +31,34 @@ color: rgb(7, 126, 126);
   padding-top: 100px;
   margin-left: 40px;
 }
-.signup-form-input{
-  width: 580px;
-}
 
 .signup-btn{
   background-color: rgb(7, 126, 126);
   color: beige;
-  margin-left: 1255px;
+  margin-left: 1225px;
   font-size: 5; 
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.signup-form-btn{
+  background-color: rgb(7, 126, 126);
+  color: beige;
+  font-size: 5; 
+  margin-right: 10px;
+  font-weight: bold;
+}
+.signup-form-input{
+  width: 580px;
 }
 
 
-/* .signup-btn:hover{
+.signup-btn:hover{
   color: beige;
   text-decoration: none;
-  font-weight: bold;
-} */
+  font-weight: normal;
+
+}
 
 .login-left-panel{
   background-color: rgb(7, 126, 126);
@@ -251,9 +243,9 @@ color: rgb(7, 126, 126);
 .profile-image-supplier{
   margin-left: 50px;
   margin-top: 10px;
-  border-radius: 200px;
-  width: 50px;
-  height: 50px;
+  border-radius: 300px;
+  width: 35px;
+  height: 35px;
 }
 
 body{
