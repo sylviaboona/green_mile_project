@@ -63,7 +63,7 @@ const ViewInvoices = () => {
                 <br />
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     <div className="col">
-                        <div className="card invoice-card text-dark bg-light mb-3">
+                        <div className="card invoice-card text-dark mb-3">
                             <div className="card-header">
                             <div className="card-body">
                                 <h6 className="card-title">Samsung</h6>

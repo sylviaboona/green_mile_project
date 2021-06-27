@@ -217,8 +217,9 @@ color: rgb(7, 126, 126);
 }
 
 .invoice-card{
-  /* width: 250px; */
+  width: 250px;
   margin-left: 10px;
+  background-color: white;
 }
 
 .total-order-cost{

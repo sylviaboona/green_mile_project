@@ -109,7 +109,7 @@ const ViewLoaders = () => {
                 <Link to="/addLoader" className="btn btn-sm signup-btn">ADD LOADER</Link>
                 <br />
                 <br />
-                <table id="example" className="table table-borderless table-container">
+                <table id="example" className="table table-container">
                     <thead>
                         <tr>
                             <th> No.</th>
