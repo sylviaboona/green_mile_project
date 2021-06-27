@@ -1,6 +1,6 @@
 import React from 'react';
 import SideBar from '../components/SideBar'
-import { Link } from 'react-router-dom';
+import Modal from "react-bootstrap/Modal";
 // const dt = require('datatables.net')()
 // const dt = require('datatables.net-dt')
 
@@ -100,13 +100,45 @@ const ViewLoaders = () => {
     // $(()=>{
     //     $(('#example') as any).DataTable();
     // } );
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    const showModal = () => {
+        setIsOpen(true);
+    };
+
+    const hideModal = () => {
+        setIsOpen(false);
+    };
 
     return (
         <div className="page-container">
 
             <SideBar />
             <div className="page-right-panel">
-                <Link to="/addLoader" className="btn btn-sm signup-btn">ADD LOADER</Link>
+            <button type="button" className="btn btn-sm signup-btn" onClick={showModal}>ADD LOADER</button>
+                <Modal show={isOpen} onHide={hideModal}>
+                    <Modal.Header className="modal-header">Add a New Loader</Modal.Header>
+                    <Modal.Body>
+                    <form className="signup-form">
+                    <input type="text" name="name" placeholder="Name" className="form-control signup-form-input" />
+                    <br />
+                    <input type="text" name="email" placeholder="Email" className="form-control signup-form-input" />
+                    <br />
+                    <input type="text" name="phone" placeholder="Phone" className="form-control signup-form-input" />
+                    <br />
+                    <input type="text" name="dob" placeholder="Date of Birth" className="form-control signup-form-input" />
+                    <br />
+                    <input type="text" name="password" placeholder="Password" className="form-control signup-form-input" />
+                    <br />
+                    <input type="text" name="cpassword" placeholder="Confirm Password" className="form-control signup-form-input" />
+                    <br />
+                    <input type="submit" value="Register Loader" className="btn signup-form-btn signup-form-input " />
+                </form>
+                        <br />
+                        <button className="btn signup-form-btn signup-form-input" onClick={hideModal}>Close</button>
+                    </Modal.Body>
+                    <Modal.Footer className="modal-footer">@My Green Connection</Modal.Footer>
+                </Modal>
                 <br />
                 <br />
                 <table id="example" className="table table-container">

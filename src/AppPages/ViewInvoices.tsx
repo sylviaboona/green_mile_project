@@ -63,10 +63,11 @@ const ViewInvoices = () => {
                 <br />
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     <div className="col">
-                        <div className="card invoice-card text-dark mb-3">
+                        <div className="card invoice-card">
                             <div className="card-header">
                             <div className="card-body">
                                 <h6 className="card-title">Samsung</h6>
+                                <hr />
                                 {/* <p className="card-text"> Client Name: </p>  */}
                                 {/* {clientOrder[0].map(item => (item.clientDetails.name))} */}
                                 <p className="card-text total-order-cost">{totalCost}UGX</p>

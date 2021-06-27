@@ -2,7 +2,7 @@ import React from 'react';
 // import 'bootstrap/dist/bootstrap.min.css';
 import './assets/css/App.css';
 import Login from './AppPages/Login';
-import AddLoader from './AppPages/AddLoader'
+// import AddLoader from './AppPages/AddLoader'
 // import Home from './AppPages/Home';
 import ViewLoaders from './AppPages/ViewLoaders';
 import ViewSuppliers from './AppPages/ViewSuppliers'
@@ -10,7 +10,7 @@ import AdminDash from './AppPages/AdminDash';
 import ViewReceipients from './AppPages/ViewReceipients'
 import Settings from './AppPages/Settings';
 import ViewInvoices from './AppPages/ViewInvoices';
-import AddSupplier from './AppPages/AddSupplier';
+// import AddSupplier from './AppPages/AddSupplier';
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import {
@@ -18,7 +18,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import CreatePackage from './AppPages/CreatePackage';
+// import CreatePackage from './AppPages/CreatePackage';
 import ViewPackages from './AppPages/ViewPackages';
 import SupplierDash from './AppPages/SupplierDash';
 import ForgotPassword from './AppPages/ForgotPassword';
@@ -44,12 +44,12 @@ function App() {
           <Route path="/viewInvoices">
             <ViewInvoices />
           </Route>
-          <Route path="/addLoader">
+          {/* <Route path="/addLoader">
             <AddLoader />
-          </Route>
-          <Route path="/addSupplier">
+          </Route> */}
+          {/* <Route path="/addSupplier">
             <AddSupplier />
-          </Route>
+          </Route> */}
           <Route path="/settings">
             <Settings />
           </Route>
@@ -62,9 +62,9 @@ function App() {
           <Route path="/forgotPassword">
             <ForgotPassword />
           </Route>
-          <Route path="/createPackage">
+          {/* <Route path="/createPackage">
             <CreatePackage />
-          </Route>
+          </Route> */}
           <Route path="/viewPackages">
             <ViewPackages />
           </Route>
