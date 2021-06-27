@@ -125,7 +125,7 @@ const ViewPackages = () => {
                 <br />
                 <br />
                 <br />
-                <table className="table table-borderless table-container">
+                <table className="table table-container">
                     <thead>
                         <tr>
                             <th>Package No.</th>
