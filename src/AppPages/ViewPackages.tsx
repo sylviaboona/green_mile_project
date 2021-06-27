@@ -49,40 +49,40 @@ const ViewPackages = () => {
                 <br />
                 <br />
                 <br />
-                <table className="table table-striped table-bordered">
-                    <thead className="table-header">
+                <table className="table table-borderless table-container">
+                    <thead>
                         <tr>
-                            <th className="table-field ">Package No.</th>
-                            <th className="table-field">Package Name</th>
-                            <th className="table-field table-packages"> Receipient</th>
-                            <th className="table-field table-packages"> Address</th>
-                            <th className="table-field table-packages"> Phone</th>
-                            <th className="table-field table-packages"> Delivery Time</th>
-                            <th className="table-field"> Delivery Cost</th>
+                            <th>Package No.</th>
+                            <th>Package Name</th>
+                            <th>Receipient</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Delivery Time</th>
+                            <th>Delivery Cost</th>
                         </tr>
                     </thead>
                     <tbody >
 
                     {localStorage.getItem('packagename') && (
                         <tr>
-                                <td className="table-data">001</td>
-                                <td className="table-data">{localStorage.getItem('packagename')}</td>
-                                <td className="table-data">{localStorage.getItem('name')}</td>
-                                <td className="table-data">{localStorage.getItem('address')}</td>
-                                <td className="table-data">{localStorage.getItem('phone')}</td>
-                                <td className="table-data">{localStorage.getItem('time')}</td>
-                                <td className="table-data">{localStorage.getItem('cost')}</td>
+                                <td>001</td>
+                                <td>{localStorage.getItem('packagename')}</td>
+                                <td>{localStorage.getItem('name')}</td>
+                                <td>{localStorage.getItem('address')}</td>
+                                <td>{localStorage.getItem('phone')}</td>
+                                <td>{localStorage.getItem('time')}</td>
+                                <td>{localStorage.getItem('cost')}</td>
                         </tr>
                     )}
                         {/* {packageItems.map(item => (
                             <tr>
-                                <td className="table-data">{item.packageNo}</td>
-                                <td className="table-data">{item.packagename}</td>
-                                <td className="table-data">{item.name}</td>
-                                <td className="table-data">{item.address}</td>
-                                <td className="table-data">{item.phone}</td>
-                                <td className="table-data">{item.time}</td>
-                                <td className="table-data">{item.cost}</td>
+                                <td>{item.packageNo}</td>
+                                <td>{item.packagename}</td>
+                                <td>{item.name}</td>
+                                <td>{item.address}</td>
+                                <td>{item.phone}</td>
+                                <td>{item.time}</td>
+                                <td>{item.cost}</td>
                             </tr>
                         ))} */}
                     </tbody>

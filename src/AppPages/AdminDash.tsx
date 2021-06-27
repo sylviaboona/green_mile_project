@@ -8,7 +8,22 @@ const state = {
     'April', 'May'],
   datasets: [
     {
-      label: 'Rainfall',
+      label: 'Packages',
+      backgroundColor: 'rgba(75,192,192,1)',
+      borderColor: 'rgba(0,0,0,1)',
+      borderWidth: 2,
+      data: [65, 59, 80, 81, 56]
+    }
+  ]
+}
+
+const state3 = {
+
+  labels: ['January', 'February', 'March',
+    'April', 'May'],
+  datasets: [
+    {
+      label: 'Suppliers',
       backgroundColor: 'rgba(75,192,192,1)',
       borderColor: 'rgba(0,0,0,1)',
       borderWidth: 2,
@@ -22,7 +37,7 @@ const state2 = {
     'April', 'May'],
   datasets: [
     {
-      label: 'Rainfall',
+      label: 'Suppliers',
       backgroundColor: [
         '#B21F00',
         '#C9DE00',
@@ -47,9 +62,7 @@ const AdminDash = () => {
   return (
     <div className="page-container">
       <SideBar />
-      <div className="page-right-panel">
-        <div className="row row-cols-1 row-cols-md-6 g-4">
-          <div className="col">
+      <div className="page-right-panel graphs">
             <br />
             <div className="card admin-dash-card">
             <div className="card-body">
@@ -64,7 +77,7 @@ const AdminDash = () => {
                   },
                   legend: {
                     display: true,
-                    position: 'right',
+                    position:'left',
                     width: 20
                   }
                 }}
@@ -76,7 +89,7 @@ const AdminDash = () => {
             <div className="card-body">
               <Line
                 type='line'
-                data={state}
+                data={state3}
                 options={{
                   title: {
                     display: true,
@@ -97,17 +110,17 @@ const AdminDash = () => {
               <Pie
                 type='pie'
                 data={state2}
-                options={{
-                  title: {
-                    display: true,
-                    text: 'Average Rainfall per month',
-                    fontSize: 20
-                  },
-                  legend: {
-                    display: true,
-                    position: 'right'
-                  }
-                }}
+                // options={{
+                //   title: {
+                //     display: true,
+                //     text: 'Average Rainfall per month',
+                //     fontSize: 20
+                //   },
+                //   legend: {
+                //     display: true,
+                //     position: 'right'
+                //   }
+                // }}
               />
             </div>
             </div>
@@ -133,8 +146,6 @@ const AdminDash = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
   )
 }
 

@@ -32,29 +32,28 @@ const ViewSuppliers = () => {
                 <br />
                 <br />
                 <br />
-                <table className="table table-striped table-bordered">
+                <table className="table table-borderless table-container">
                     <thead className="table-header">
                         <tr>
-                            <th className="table-field table-supplier"> No.</th>
-                            <th className="table-field table-supplier"> Full Name</th>
-                            <th className="table-field table-supplier">Email Address</th>
-                            <th className="table-field table-supplier"> Phone Contact</th>
-                            <th className="table-field table-supplier"> Date Of Birth</th>
-                            <th className="table-field table-supplier"> Update</th>
-                            <th className="table-field table-supplier"> Delete</th>
+                            <th> No.</th>
+                            <th> Full Name</th>
+                            <th>Email Address</th>
+                            <th> Phone Contact</th>
+                            <th> Date Of Birth</th>
+                            <th> Update</th>
+                            <th> Delete</th>
                         </tr>
                     </thead>
                     <tbody >
                         {suppliers.map(item => (
                             <tr>
-                                <td className="table-data">{item.id}</td>
-                                <td className="table-data">{item.name}</td>
-                                <td className="table-data">{item.email}</td>
-                                <td className="table-data">{item.phone}</td>
-                                <td className="table-data">{item.dob}</td>
-                                <td className="table-data">Update</td>
-                                <td className="table-data">Delete</td>
-                                {/* <td className="table-data"><Link to="" className="table-data">Update</Link></td> */}
+                                <td>{item.id}</td>
+                                <td>{item.name}</td>
+                                <td>{item.email}</td>
+                                <td>{item.phone}</td>
+                                <td>{item.dob}</td>
+                                <td>Update</td>
+                                <td>Delete</td>
                             </tr>
                         ))}
                     </tbody>
