@@ -41,7 +41,7 @@ const LoginForm = () => {
                 <img src={doorDelivery} alt="Door Delivery img" className="login-left-panel-img" />
             </div>
             <div className="login-right-panel">
-                <img src={gmlogo} width="250" alt="GreenMileLogo" className="logo-login" />
+                <img src={gmlogo} width="30%" alt="GreenMileLogo" className="logo-login" />
                 <form className="login-form" onSubmit={submitUserData}>
                     <input type="text" name="name" placeholder="Email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)} />
                     <br />
