@@ -160,6 +160,7 @@ color: rgb(7, 126, 126);
   border-radius: 5px;
   width: 120px;
   height: 600px;
+  /* justify-content: center; */
 }
 .linebreak{
   background-color: beige;
@@ -168,6 +169,7 @@ color: rgb(7, 126, 126);
 }
 .side-bar-signup{
   width: 500px;
+  
 }
 
 .sidebar-link{
@@ -179,6 +181,10 @@ color: rgb(7, 126, 126);
   text-decoration: none;
   font-weight: bold;
   align-content: center;
+}
+.sidebar-link-supplier{
+  margin-right: 10px;
+  justify-content: center;
 }
 
 .sidebar-icon{
@@ -193,7 +199,6 @@ color: rgb(7, 126, 126);
 
 .page-right-panel{
   height: 600px;
-  /* background-color: white; */
   background-color: rgb(245, 241, 241);
   border-radius: 5px;
   margin-left: 143px;

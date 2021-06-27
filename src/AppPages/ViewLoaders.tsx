@@ -27,6 +27,69 @@ const ViewLoaders = () => {
             email: 'helen@gmail.com',
             dob: '20/5/1986'
         },
+        {
+            id: '04',
+            name: 'Theo Kiwana',
+            phone: '0789587888',
+            email: 'rita@gmail.com',
+            dob: '30/07/1987'
+        },
+        {
+            id: '06',
+            name: 'Sylvia Boona',
+            phone: '0789587800',
+            email: 'syl@gmail.com',
+            dob: '22/10/1990'
+        },
+        {
+            id: '06',
+            name: 'Helen Mazima',
+            phone: '0709587800',
+            email: 'helen@gmail.com',
+            dob: '20/5/1986'
+        },
+        {
+            id: '07',
+            name: 'Theo Kiwana',
+            phone: '0789587888',
+            email: 'rita@gmail.com',
+            dob: '30/07/1987'
+        },
+        {
+            id: '08',
+            name: 'Sylvia Boona',
+            phone: '0789587800',
+            email: 'syl@gmail.com',
+            dob: '22/10/1990'
+        },
+        {
+            id: '09',
+            name: 'Helen Mazima',
+            phone: '0709587800',
+            email: 'helen@gmail.com',
+            dob: '20/5/1986'
+        },
+        {
+            id: '10',
+            name: 'Theo Kiwana',
+            phone: '0789587888',
+            email: 'rita@gmail.com',
+            dob: '30/07/1987'
+        },
+        // {
+        //     id: '11',
+        //     name: 'Sylvia Boona',
+        //     phone: '0789587800',
+        //     email: 'syl@gmail.com',
+        //     dob: '22/10/1990'
+        // },
+        // {
+        //     id: '12',
+        //     name: 'Helen Mazima',
+        //     phone: '0709587800',
+        //     email: 'helen@gmail.com',
+        //     dob: '20/5/1986'
+        // },
 
     ]
 
@@ -43,7 +106,6 @@ const ViewLoaders = () => {
 
             <SideBar />
             <div className="page-right-panel">
-                <br />
                 <Link to="/addLoader" className="btn btn-sm signup-btn">ADD LOADER</Link>
                 <br />
                 <br />
@@ -58,9 +120,7 @@ const ViewLoaders = () => {
                             <th> Update</th>
                             <th> Delete</th>
                         </tr>
-
                     </thead>
-                    
                     <tbody >
                         {loaders.map(item => (
                             <>

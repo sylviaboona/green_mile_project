@@ -43,7 +43,6 @@ const ViewPackages = () => {
         <div className="page-container">
             <SideBarSupplier />
             <div className="page-right-panel">
-                <br />
                 <Link to="/createPackage" ><button type="button" className="btn btn-sm signup-btn">ADD PACKAGE</button></Link>
                 <br />
                 <br />

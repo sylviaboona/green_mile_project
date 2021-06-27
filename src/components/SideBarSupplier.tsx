@@ -9,30 +9,31 @@ import CardGiftcardSharpIcon from '@material-ui/icons/CardGiftcardSharp';
 const SideBarSupplier = () => {
     return (
         <div className="side-bar">
-             
-        <br />
-        <br />
-        <div >
-        <DashboardIcon className="sidebar-link sidebar-icon"/> 
+
             <br />
-            <Link to="/supplierDash" className="sidebar-link">My Account</Link>
-            <hr className="linebreak"/>
-            <CardGiftcardSharpIcon className="sidebar-link sidebar-icon"/>
-            <br/>
-            <Link to="/viewPackages" className="sidebar-link">Packages</Link>
-            <hr className="linebreak"/>
-            <ShoppingCartSharpIcon className="sidebar-link sidebar-icon"/>
-            <br/>
-            <Link to="/viewOrders" className="sidebar-link">Orders</Link>
-            <hr className="linebreak"/>
-            <ViewListIcon className="sidebar-link sidebar-icon"/>
-            <br/>
-            <Link to="/viewReceipients" className="sidebar-link">Receipients</Link>
-            <hr className="linebreak"/>
-            <SettingsIcon className="sidebar-link sidebar-icon"/>
-            <br/>
-            <Link to="/settings" className="sidebar-link">Settings</Link>
-        </div>
+            <br />
+            <br />
+            <div >
+                <DashboardIcon className="sidebar-link sidebar-icon" />
+                <br />
+                <Link to="/supplierDash" className="sidebar-link sidebar-link-supplier">My Account</Link>
+                <hr className="linebreak" />
+                <CardGiftcardSharpIcon className="sidebar-link sidebar-icon" />
+                <br />
+                <Link to="/viewPackages" className="sidebar-link sidebar-link-supplier">Packages</Link>
+                <hr className="linebreak" />
+                <ShoppingCartSharpIcon className="sidebar-link sidebar-icon" />
+                <br />
+                <Link to="/viewOrders" className="sidebar-link sidebar-link-supplier">Orders</Link>
+                <hr className="linebreak" />
+                <ViewListIcon className="sidebar-link sidebar-icon" />
+                <br />
+                <Link to="/viewReceipients" className="sidebar-link sidebar-link-supplier">Receipients</Link>
+                <hr className="linebreak" />
+                <SettingsIcon className="sidebar-link sidebar-icon" />
+                <br />
+                <Link to="/settings" className="sidebar-link sidebar-link-supplier">Settings</Link>
+            </div>
         </div>
     )
 }
