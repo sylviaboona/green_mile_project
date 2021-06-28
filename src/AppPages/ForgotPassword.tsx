@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 const ForgotPassword = () => {
     let history = useHistory();
     return (
-        <div className="login-page-container">
+        <div className="container login-page-container">
 
             <div className="login-left-panel">
                 <p className="tagline-loginpage">Your number one package delivery partner</p>
