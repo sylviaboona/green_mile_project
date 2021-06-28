@@ -10,7 +10,8 @@ import ReceiptIcon from '@material-ui/icons/Receipt';
 
 const SideBar = () => {
     return (
-        <div className="side-bar">
+        <div className="container side-bar">
+            {/* <div className="row"> */}
             <br/>
             <br/>
             <DashboardIcon className="sidebar-link sidebar-icon"/> 
@@ -38,6 +39,8 @@ const SideBar = () => {
             <Link to="/settings" className="sidebar-link">Settings</Link>
             {/* <hr className="linebreak"/> */}
         </div>
+             
+        // </div>
     )
 }
 
