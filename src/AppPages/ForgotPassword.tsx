@@ -1,9 +1,10 @@
 import React from 'react'
-import gmlogo from '../assets/img/mgc_logo.png';
+// import gmlogo from '../assets/img/mgc_logo.png';
 import doorDelivery from '../assets/img/doordelivery.jpg'
-// import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const ForgotPassword = () => {
+    let history = useHistory();
     return (
         <div className="login-page-container">
 
@@ -12,7 +13,7 @@ const ForgotPassword = () => {
                 <img src={doorDelivery} alt="Door Delivery img" className="login-left-panel-img" />
             </div>
             <div className="login-right-panel">
-                <img src={gmlogo} width="250" alt="GreenMileLogo" className="logo-login" />
+                {/* <img src={gmlogo} width="250" alt="GreenMileLogo" className="logo-login" /> */}
                 <form className="login-form">
                     <input type="text" name="name" placeholder="Email" className="form-control" />
                     <br />
@@ -20,9 +21,7 @@ const ForgotPassword = () => {
                     <br />
                     <input type="text" name="cpassword" placeholder="Confirm Password" className="form-control" />
                     <br />
-                    <input type="submit" value="Change Password" className="btn login-btn" />
-
-
+                    <input type="submit" value="Change Password" className="btn login-btn" onClick={()=>history.push("/")}/>
                 </form>
             </div>
 

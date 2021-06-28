@@ -16,7 +16,7 @@ import Footer from './components/Footer'
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
 // import CreatePackage from './AppPages/CreatePackage';
 import ViewPackages from './AppPages/ViewPackages';
@@ -58,6 +58,7 @@ function App() {
           </Route> */}
           <Route path="/" exact>
             <Login />
+           
           </Route>
           <Route path="/forgotPassword">
             <ForgotPassword />

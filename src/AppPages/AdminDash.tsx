@@ -60,7 +60,7 @@ const state2 = {
 
 const AdminDash = () => {
   return (
-    <div className="page-container">
+    <div className="container-fluid page-container">
       <SideBar />
       <div className="page-right-panel graphs">
             <br />
