@@ -94,7 +94,7 @@ const ViewSuppliers = () => {
             <div className="page-right-panel">
                 <button type="button" className="btn btn-sm signup-btn" onClick={showModal}>ADD SUPPLIER</button>
                 <Modal show={isOpen} onHide={hideModal}>
-                    <Modal.Header className="modal-header">Add a new Supplier</Modal.Header>
+                    <Modal.Header className="modal-header">Add New Supplier</Modal.Header>
                     <Modal.Body>
                         <form className="signup-form">
                             <input type="text" name="name" placeholder="Name" className="form-control signup-form-input" />

@@ -2,8 +2,10 @@ import React, {useState} from 'react'
 // import { useState, useEffect } from 'react'
 import Modal from "react-bootstrap/Modal";
 import SideBarSupplier from '../components/SideBarSupplier'
+import {useHistory} from 'react-router-dom'
 
 const ViewPackages = () => {
+    let history = useHistory()
     // const packageItems = [
     //     {
     //         packageNo: '001',
@@ -40,12 +42,13 @@ const ViewPackages = () => {
     //     console.log(packageItems);
     // }, [packageItems])
 
+    const [date, setDate] = useState('')
     const [packagename, setPackageName] = useState('')
     const [name, setName] = useState('')
     const [address, setAddress] = useState('')
     const [phone, setPhone] = useState('')
-    const [time, setTime] = useState('')
-    const [cost, setCost] = useState('')
+    
+    // const [cost, setCost] = useState('')
 
 
     const handleSubmit = () => {
@@ -53,8 +56,8 @@ const ViewPackages = () => {
         localStorage.setItem('name', name);
         localStorage.setItem('address', address);
         localStorage.setItem('phone', phone);
-        localStorage.setItem('time', time);
-        localStorage.setItem('cost', cost);
+        // localStorage.setItem('atatus', atatus);
+        // localStorage.setItem('cost', cost);
     };
 
     const onSubmit = (e: any) => {
@@ -65,22 +68,24 @@ const ViewPackages = () => {
             return
         }
         const item = {
+            date: date,
             packagename: packagename,
             name: name,
             address: address,
             phone: phone,
-            time: time,
-            cost: cost
+            // 
+            // cost: cost
         }
 
         console.log(item);
 
+        setDate('')
         setPackageName('')
         setName('')
         setAddress('')
         setPhone('')
-        setTime('')
-        setCost('')
+        
+        // setStatus('')
     }
 
     const [isOpen, setIsOpen] = React.useState(false);
@@ -102,6 +107,8 @@ const ViewPackages = () => {
                     <Modal.Header className="modal-header">Add a New Loader</Modal.Header>
                     <Modal.Body>
                         <form className="signup-form" onSubmit={onSubmit}>
+                        <input type="text" name="packagename" placeholder="Date" className="form-control signup-form-input" value={packagename} onChange={(e) => setPackageName(e.target.value)} />
+                            <br />
                             <input type="text" name="packagename" placeholder="Package Name" className="form-control signup-form-input" value={packagename} onChange={(e) => setPackageName(e.target.value)} />
                             <br />
                             <input type="text" name="receipient" placeholder="Receipent" className="form-control signup-form-input" value={name} onChange={(e) => setName(e.target.value)} />
@@ -109,10 +116,10 @@ const ViewPackages = () => {
                             <input type="text" name="address" placeholder="Address" className="form-control signup-form-input" value={address} onChange={(e) => setAddress(e.target.value)} />
                             <br />
                             <input type="text" name="phone" placeholder="Contact" className="form-control signup-form-input" value={phone} onChange={(e) => setPhone(e.target.value)} />
-                            <br />
-                            <input type="text" name="delivery time" placeholder="Delivery Time" className="form-control signup-form-input" value={time} onChange={(e) => setTime(e.target.value)} />
-                            <br />
-                            <input type="text" name="delivery cost" placeholder="Delivery Cost" className="form-control signup-form-input" value={cost} onChange={(e) => setCost(e.target.value)} />
+                            {/* <br /> */}
+                            {/* <input type="text" name="cost" placeholder="Delivery Cost" className="form-control signup-form-input" value={time} onChange={(e) => setTime(e.target.value)} /> */}
+                            {/* <br /> */}
+                            {/* <input type="text" name="status" placeholder="Status" className="form-control signup-form-input" value={status} onChange={(e) => setStatus(e.target.value)} /> */}
                             <br />
                             <input type="submit" value="Create Package" className="btn signup-form-btn signup-form-input" onClick={handleSubmit} />
                         </form>
@@ -129,12 +136,13 @@ const ViewPackages = () => {
                     <thead>
                         <tr>
                             <th>Package No.</th>
+                            <th>Date</th>
                             <th>Package Name</th>
                             <th>Receipient</th>
                             <th>Address</th>
                             <th>Phone</th>
-                            <th>Delivery Time</th>
                             <th>Delivery Cost</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody >
@@ -146,8 +154,8 @@ const ViewPackages = () => {
                                 <td>{localStorage.getItem('name')}</td>
                                 <td>{localStorage.getItem('address')}</td>
                                 <td>{localStorage.getItem('phone')}</td>
-                                <td>{localStorage.getItem('time')}</td>
-                                <td>{localStorage.getItem('cost')}</td>
+                                {/* <td>{localStorage.getItem('cost')}</td> */}
+                                {/* <td>{localStorage.getItem('status')}</td> */}
                             </tr>
                         )}
                         {/* {packageItems.map(item => (

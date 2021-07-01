@@ -76,7 +76,7 @@ function App() {
             <SupplierDash />
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

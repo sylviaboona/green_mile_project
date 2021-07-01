@@ -62,6 +62,7 @@ const AdminDash = () => {
   return (
     <div className="container-fluid page-container">
       <SideBar />
+      {/* <List>{SideBar}</List> */}
       <div className="page-right-panel graphs">
             <br />
             <div className="card admin-dash-card">

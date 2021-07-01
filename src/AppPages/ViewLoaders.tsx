@@ -117,7 +117,7 @@ const ViewLoaders = () => {
             <div className="page-right-panel">
             <button type="button" className="btn btn-sm signup-btn" onClick={showModal}>ADD LOADER</button>
                 <Modal show={isOpen} onHide={hideModal}>
-                    <Modal.Header className="modal-header">Add a New Loader</Modal.Header>
+                    <Modal.Header className="modal-header">Add New Loader</Modal.Header>
                     <Modal.Body>
                     <form className="signup-form">
                     <input type="text" name="name" placeholder="Name" className="form-control signup-form-input" />
