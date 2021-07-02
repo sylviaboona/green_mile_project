@@ -29,10 +29,13 @@ const LoginForm = () => {
 
         }
 
-        console.log(user);
-
-        setEmail('')
-        setPassword('')
+        const storedEmail = localStorage.getItem('email');
+        const storedPwd = localStorage.getItem('password');
+        if (user.email !== storedEmail || user.password !== storedPwd) {
+            alert('oooooops')
+        } else {
+            history.push("/adminDash")
+        }
 
     }
     return (
@@ -50,19 +53,8 @@ const LoginForm = () => {
                         <br />
                         <input type="text" name="password" placeholder="Password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} />
                         <br />
-                        <input type="submit" value="Login" className="btn login-btn" onClick={() => { history.push("/adminDash") }} />
-
-                        {/* 
-                    {localStorage.getItem('Email') && (
-                        <div>
-                            Email: <p>{localStorage.getItem('Email')}</p>
-                        </div>
-                    )}
-                    {localStorage.getItem('Password') && (
-                        <div>
-                            Password: <p>{localStorage.getItem('Password')}</p>
-                        </div>
-                    )} */}
+                        <input type="submit" value="Login" className="btn login-btn" />
+                        {/* //onClick={() => { history.push("/adminDash")}} */}
                         <p className="forgot-password"><Link to="/forgotPassword" className="forgot-password"><i>Forgot Password?</i></Link></p>
                     </form>
                 </div>

@@ -18,6 +18,8 @@ body{
   border-radius: 5px;
 }
 
+
+
 .navbar-link{
 color: rgb(7, 126, 126);
   text-decoration: none;
@@ -34,6 +36,12 @@ color: rgb(7, 126, 126);
   border-radius: 5px;
   background-color: rgb(202, 199, 199);
   border: 0px solid;
+}
+.search-input{
+  width: 50%;
+  border-radius: 20px;
+  border: 1px solid gray;
+  background-color: white;
 }
 
 .signupform{

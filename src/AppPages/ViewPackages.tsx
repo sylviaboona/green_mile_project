@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 // import { useState, useEffect } from 'react'
 import Modal from "react-bootstrap/Modal";
 import SideBarSupplier from '../components/SideBarSupplier'
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 const ViewPackages = () => {
     let history = useHistory()
@@ -47,17 +47,17 @@ const ViewPackages = () => {
     const [name, setName] = useState('')
     const [address, setAddress] = useState('')
     const [phone, setPhone] = useState('')
-    
-    // const [cost, setCost] = useState('')
+    const [quantity, setQuantity] = useState('')
 
 
     const handleSubmit = () => {
+        localStorage.setItem('date', date);
         localStorage.setItem('packagename', packagename);
+        localStorage.setItem('quantity', quantity);
         localStorage.setItem('name', name);
         localStorage.setItem('address', address);
         localStorage.setItem('phone', phone);
-        // localStorage.setItem('atatus', atatus);
-        // localStorage.setItem('cost', cost);
+
     };
 
     const onSubmit = (e: any) => {
@@ -70,22 +70,21 @@ const ViewPackages = () => {
         const item = {
             date: date,
             packagename: packagename,
+            quantity: quantity,
             name: name,
             address: address,
             phone: phone,
-            // 
-            // cost: cost
         }
 
         console.log(item);
 
         setDate('')
         setPackageName('')
+        setQuantity('')
         setName('')
         setAddress('')
         setPhone('')
-        
-        // setStatus('')
+
     }
 
     const [isOpen, setIsOpen] = React.useState(false);
@@ -107,19 +106,17 @@ const ViewPackages = () => {
                     <Modal.Header className="modal-header">Add a New Loader</Modal.Header>
                     <Modal.Body>
                         <form className="signup-form" onSubmit={onSubmit}>
-                        <input type="text" name="packagename" placeholder="Date" className="form-control signup-form-input" value={packagename} onChange={(e) => setPackageName(e.target.value)} />
+                            <input type="text" name="date" placeholder="Date" className="form-control signup-form-input" value={date} onChange={(e) => setDate(e.target.value)} />
                             <br />
                             <input type="text" name="packagename" placeholder="Package Name" className="form-control signup-form-input" value={packagename} onChange={(e) => setPackageName(e.target.value)} />
+                            <br />
+                            <input type="text" name="quantity" placeholder="Quantity" className="form-control signup-form-input" value={quantity} onChange={(e) => setQuantity(e.target.value)} />
                             <br />
                             <input type="text" name="receipient" placeholder="Receipent" className="form-control signup-form-input" value={name} onChange={(e) => setName(e.target.value)} />
                             <br />
                             <input type="text" name="address" placeholder="Address" className="form-control signup-form-input" value={address} onChange={(e) => setAddress(e.target.value)} />
                             <br />
                             <input type="text" name="phone" placeholder="Contact" className="form-control signup-form-input" value={phone} onChange={(e) => setPhone(e.target.value)} />
-                            {/* <br /> */}
-                            {/* <input type="text" name="cost" placeholder="Delivery Cost" className="form-control signup-form-input" value={time} onChange={(e) => setTime(e.target.value)} /> */}
-                            {/* <br /> */}
-                            {/* <input type="text" name="status" placeholder="Status" className="form-control signup-form-input" value={status} onChange={(e) => setStatus(e.target.value)} /> */}
                             <br />
                             <input type="submit" value="Create Package" className="btn signup-form-btn signup-form-input" onClick={handleSubmit} />
                         </form>
@@ -138,10 +135,10 @@ const ViewPackages = () => {
                             <th>Package No.</th>
                             <th>Date</th>
                             <th>Package Name</th>
+                            <th>Quantity</th>
                             <th>Receipient</th>
                             <th>Address</th>
                             <th>Phone</th>
-                            <th>Delivery Cost</th>
                             <th>Status</th>
                         </tr>
                     </thead>

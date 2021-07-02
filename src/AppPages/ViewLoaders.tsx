@@ -1,6 +1,9 @@
 import React from 'react';
 import SideBar from '../components/SideBar'
 import Modal from "react-bootstrap/Modal";
+import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
+import UpdateRoundedIcon from '@material-ui/icons/UpdateRounded';
+
 // const dt = require('datatables.net')()
 // const dt = require('datatables.net-dt')
 
@@ -76,21 +79,6 @@ const ViewLoaders = () => {
             email: 'rita@gmail.com',
             dob: '30/07/1987'
         },
-        // {
-        //     id: '11',
-        //     name: 'Sylvia Boona',
-        //     phone: '0789587800',
-        //     email: 'syl@gmail.com',
-        //     dob: '22/10/1990'
-        // },
-        // {
-        //     id: '12',
-        //     name: 'Helen Mazima',
-        //     phone: '0709587800',
-        //     email: 'helen@gmail.com',
-        //     dob: '20/5/1986'
-        // },
-
     ]
 
     // $(document).ready(()=>{
@@ -115,25 +103,27 @@ const ViewLoaders = () => {
 
             <SideBar />
             <div className="page-right-panel">
-            <button type="button" className="btn btn-sm signup-btn" onClick={showModal}>ADD LOADER</button>
+                <button type="button" className="btn btn-sm signup-btn" onClick={showModal}>ADD LOADER</button>
                 <Modal show={isOpen} onHide={hideModal}>
                     <Modal.Header className="modal-header">Add New Loader</Modal.Header>
                     <Modal.Body>
-                    <form className="signup-form">
-                    <input type="text" name="name" placeholder="Name" className="form-control signup-form-input" />
-                    <br />
-                    <input type="text" name="email" placeholder="Email" className="form-control signup-form-input" />
-                    <br />
-                    <input type="text" name="phone" placeholder="Phone" className="form-control signup-form-input" />
-                    <br />
-                    <input type="text" name="dob" placeholder="Date of Birth" className="form-control signup-form-input" />
-                    <br />
-                    <input type="text" name="password" placeholder="Password" className="form-control signup-form-input" />
-                    <br />
-                    <input type="text" name="cpassword" placeholder="Confirm Password" className="form-control signup-form-input" />
-                    <br />
-                    <input type="submit" value="Register Loader" className="btn signup-form-btn signup-form-input " />
-                </form>
+                        <form className="signup-form">
+                            <input type="text" name="dor" placeholder="Date of Registration" className="form-control signup-form-input" />
+                            <br />
+                            <input type="text" name="name" placeholder="Name" className="form-control signup-form-input" />
+                            <br />
+                            <input type="text" name="email" placeholder="Email" className="form-control signup-form-input" />
+                            <br />
+                            <input type="text" name="phone" placeholder="Phone" className="form-control signup-form-input" />
+                            <br />
+                            <input type="text" name="dob" placeholder="Date of Birth" className="form-control signup-form-input" />
+                            <br />
+                            <input type="text" name="password" placeholder="Password" className="form-control signup-form-input" />
+                            <br />
+                            <input type="text" name="cpassword" placeholder="Confirm Password" className="form-control signup-form-input" />
+                            <br />
+                            <input type="submit" value="Register Loader" className="btn signup-form-btn signup-form-input " />
+                        </form>
                         <br />
                         <button className="btn signup-form-btn signup-form-input" onClick={hideModal}>Close</button>
                     </Modal.Body>
@@ -156,18 +146,18 @@ const ViewLoaders = () => {
                     <tbody >
                         {loaders.map(item => (
                             <>
-                            <tr>
-                                <td>{item.id}</td>
-                                <td>{item.name}</td>
-                                <td>{item.email}</td>
-                                <td>{item.phone}</td>
-                                <td>{item.dob}</td>
-                                <td>Update</td>
-                                <td>Delete</td>
-                            </tr>
+                                <tr>
+                                    <td>{item.id}</td>
+                                    <td>{item.name}</td>
+                                    <td>{item.email}</td>
+                                    <td>{item.phone}</td>
+                                    <td>{item.dob}</td>
+                                    <td><UpdateRoundedIcon /></td>
+                                    <td><DeleteRoundedIcon /></td>
+                                </tr>
                             </>
                         ))}
-                        
+
                     </tbody>
                 </table>
             </div>
