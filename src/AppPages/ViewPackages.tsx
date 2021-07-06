@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 // import { useState, useEffect } from 'react'
 import Modal from "react-bootstrap/Modal";
 import SideBarSupplier from '../components/SideBarSupplier'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 
 const ViewPackages = () => {
-    let history = useHistory()
+    // let history = useHistory()
     // const packageItems = [
     //     {
     //         packageNo: '001',
@@ -101,9 +101,10 @@ const ViewPackages = () => {
         <div className="page-container">
             <SideBarSupplier />
             <div className="page-right-panel">
+                <h2>PACKAGES</h2>
                 <button type="button" className="btn btn-sm signup-btn" onClick={showModal}>ADD PACKAGE</button>
                 <Modal show={isOpen} onHide={hideModal}>
-                    <Modal.Header className="modal-header">Add a New Loader</Modal.Header>
+                    <Modal.Header className="modal-header">Create a New Package</Modal.Header>
                     <Modal.Body>
                         <form className="signup-form" onSubmit={onSubmit}>
                             <input type="text" name="date" placeholder="Date" className="form-control signup-form-input" value={date} onChange={(e) => setDate(e.target.value)} />
@@ -123,12 +124,16 @@ const ViewPackages = () => {
                         <br />
                         <button className="btn signup-form-btn signup-form-input" onClick={hideModal}>Close</button>
                     </Modal.Body>
-                    <Modal.Footer className="modal-footer">@My Green Connection</Modal.Footer>
+                    <Modal.Footer className="modal-footer">@My Green Connection Inc.</Modal.Footer>
                 </Modal>
+
                 <br />
                 <br />
+                
+               <h6> Active    Pending   Delivered</h6>
+               <br />
                 <br />
-                <br />
+                <div className="package-display">
                 <table className="table table-container">
                     <thead>
                         <tr>
@@ -147,12 +152,14 @@ const ViewPackages = () => {
                         {localStorage.getItem('packagename') && (
                             <tr>
                                 <td>001</td>
+                                <td>{localStorage.getItem('date')}</td>
                                 <td>{localStorage.getItem('packagename')}</td>
+                                <td>{localStorage.getItem('quantity')}</td>
                                 <td>{localStorage.getItem('name')}</td>
                                 <td>{localStorage.getItem('address')}</td>
                                 <td>{localStorage.getItem('phone')}</td>
-                                {/* <td>{localStorage.getItem('cost')}</td> */}
-                                {/* <td>{localStorage.getItem('status')}</td> */}
+                                
+                                
                             </tr>
                         )}
                         {/* {packageItems.map(item => (
@@ -168,6 +175,13 @@ const ViewPackages = () => {
                         ))} */}
                     </tbody>
                 </table>
+                <div className="card package-details">
+                    <div className="card-body">
+                    <h6>Package Details</h6>
+                    </div>
+                    
+                </div>
+                </div>
             </div>
         </div>
     )

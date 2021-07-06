@@ -7,7 +7,7 @@ const ViewOrders = () => {
 
             <SideBarSupplier />
             <div className="page-right-panel">
-                VIEW ORDERS
+                <h2>ORDERS</h2>
 
             </div>
 

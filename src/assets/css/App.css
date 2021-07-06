@@ -4,6 +4,13 @@ body{
   background-color: rgb(245, 241, 241);
 }
 
+@media (min-width: 600px) and (max-width: 1500px) {
+  body {
+    background-color: purple;
+  }
+}
+
+
 /* @media all and (max-device-width: 1500px) { */
   /*only screen and (-webkit-min-device-pixel-ratio: 2) ,
   screen and (-webkit-device-pixel-ratio:1.5)*/
@@ -257,7 +264,6 @@ color: rgb(7, 126, 126);
 .admin-dash-card{
   height: 320px;
   margin-left: 10px;
-  /* justify-content: center;   */
 }
 
 .table-container{
@@ -271,6 +277,15 @@ color: rgb(7, 126, 126);
   border-radius: 300px;
   width: 2%;
   height: 35px;
+}
+
+.package-display{
+  display: flex;
+}
+
+.package-details{
+  margin-left: 10px;
+  width: 50%;
 }
 /* } */
 
