@@ -17,19 +17,24 @@ const SideBarSupplier = () => {
                 <DashboardIcon className="sidebar-link sidebar-icon" />
                 <br />
                 <Link to="/supplierDash" className="sidebar-link sidebar-link-supplier">My Account</Link>
+                <br />
                 <hr className="linebreak" />
+                <br />
                 <CardGiftcardSharpIcon className="sidebar-link sidebar-icon" />
                 <br />
                 <Link to="/viewPackages" className="sidebar-link sidebar-link-supplier">Packages</Link>
                 <hr className="linebreak" />
+                <br />
                 <ShoppingCartSharpIcon className="sidebar-link sidebar-icon" />
                 <br />
                 <Link to="/viewOrders" className="sidebar-link sidebar-link-supplier">Orders</Link>
                 <hr className="linebreak" />
+                <br />
                 <ViewListIcon className="sidebar-link sidebar-icon" />
                 <br />
                 <Link to="/viewReceipients" className="sidebar-link sidebar-link-supplier">Receipients</Link>
                 <hr className="linebreak" />
+                <br />
                 <SettingsIcon className="sidebar-link sidebar-icon" />
                 <br />
                 <Link to="/settings" className="sidebar-link sidebar-link-supplier">Settings</Link>

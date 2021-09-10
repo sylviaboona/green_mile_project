@@ -12,7 +12,7 @@ import Settings from './AppPages/Settings';
 import ViewInvoices from './AppPages/ViewInvoices';
 // import AddSupplier from './AppPages/AddSupplier';
 import NavBar from './components/NavBar'
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 import {
   BrowserRouter as Router,
   Switch,
